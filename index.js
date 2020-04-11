@@ -4,7 +4,7 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 let bodyParser = require('body-parser');
-// const {user, password} = require('./config/config.js');
+const {user, password} = require('/config.js');
 const app = express()
 app.use(cors())
 app.get('/', (req, res) => {
@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/send', (req, res) => {
-  res.send('HEY send!')
+  res.send(`${user}`)
 })
 app.listen(3000, () => console.log('Server running on port 3000'))
