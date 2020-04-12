@@ -17,4 +17,13 @@ app.get('/', (req, res) => {
 app.get('/send', (req, res) => {
   res.send(`hey`)
 })
+
+let transport = {
+    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+    port: 587,
+    auth: {
+    user: 'harry.g.patrick94@gmail.com',
+    pass: 'Frdqwzvs112'
+  }
+}
 app.listen(3000, () => console.log('Server running on port 3000'))
