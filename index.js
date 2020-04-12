@@ -23,7 +23,7 @@ let transport = {
     port: 587,
     auth: {
     user: 'harry.g.patrick94@gmail.com',
-    pass: 'Frdqwzvs112'
+    pass: 'bzzzzz'
   }
 }
 
