@@ -29,4 +29,12 @@ let transport = {
 
 let transporter = nodemailer.createTransport(transport)
 
+transporter.verify((error, success) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Server is ready to take messages');
+  }
+});
+
 app.listen(3000, () => console.log('Server running on port 3000'))
