@@ -7,6 +7,7 @@ let bodyParser = require('body-parser');
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
+app.use(express.json())
 app.get('/', (req, res) => {
   res.send('HEY!')
 })
