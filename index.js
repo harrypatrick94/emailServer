@@ -39,7 +39,7 @@ transporter.verify((error, success) => {
 
 router.post('/send', (req, res, next) => {
 
-  console.log('request: ', req)
+  
   let name = req.body.name
   let email = req.body.email
   let message = req.body.message
