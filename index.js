@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 let bodyParser = require('body-parser');
 // const {user, password} = require('/config.js');
-// app.use(cors())
+app.use(cors())
 app.get('/', (req, res) => {
   res.send('HEY!')
 })
