@@ -26,4 +26,7 @@ let transport = {
     pass: 'Frdqwzvs112'
   }
 }
+
+let transporter = nodemailer.createTransport(transport)
+
 app.listen(3000, () => console.log('Server running on port 3000'))
