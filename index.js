@@ -38,9 +38,9 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-  let name = req.body.name
-  let email = req.body.email
-  let message = req.body.message
+  let name = req.query.name
+  let email = req.query.email
+  let message = req.query.message
   let content = `name: ${name} \n email: ${email} \n message: ${message} `
 
   let mail = {
